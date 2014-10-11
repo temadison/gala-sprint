@@ -26,15 +26,27 @@
     <link rel="stylesheet" href="css/templatemo_style.css">
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <script>
+        var dialog = document.querySelector('dialog');
+        document.querySelector('#btn btn-primary').onclick = function () {
+            dialog.show();
+        };
+        document.querySelector('#close').onclick = function () {
+            dialog.close();
+        };
+    </script>
+
     <style type="text/css">
         #gala-framing-the-future-header {
             background-color: transparent;
-            background-image: url(images/gala/logo/rsz_gala-framing-the-future-header.png);
+            background-image: url(images/gala/logo/rsz-gala-framing-the-future-header-clear.png);
             background-repeat: no-repeat;
             background-position: 30px center;
-            height: 102px;
+            height: 86px;
             display: block;
-        }</style>
+        }
+    </style>
 
 </head>
 <body>
@@ -44,20 +56,20 @@
     improve your experience.</p>
 <![endif]-->
 <!--  Free HTML5 Template by http://www.templatemo.com -->
-<div id="front">
+<header id="front">
     <div class="site-header">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div id="gala-framing-the-future-header">
                         <h1><a rel="nofollow" href="http://www.tworiverspcs.org/"
                                title="Two Rivers Public Charter School"/></h1>
                     </div>
                 </div>
-                <div class="col-md-9 col-sm-6 col-xs-6">
+                <div class="col-md-8 col-sm-6 col-xs-6">
                     <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
 
-                    <div class="main-menu">
+                    <nav class="main-menu">
                         <ul>
                             <li><a href="#front">Home</a></li>
                             <li><a href="#event">Event</a></li>
@@ -65,13 +77,13 @@
                             <li><a href="#school">Two Rivers</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="responsive">
-                        <div class="main-menu">
+                        <nav class="main-menu">
                             <ul>
                                 <li><a href="#front">Home</a></li>
                                 <li><a href="#event">Event</a></li>
@@ -79,15 +91,15 @@
                                 <li><a href="#school">Two Rivers</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
-                        </div>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</header>
 
-<div class="site-slider">
+<article class="site-slider">
     <ul class="bxslider">
         <li>
             <img src="images/gala/home/slide_9076.jpg" alt="slider image 1">
@@ -107,7 +119,7 @@
 
             <div class="container caption-wrapper">
                 <div class="slider-caption">
-                    <h2>April 25th, 2015</h2>
+                    <h2 class="dynamic-date">April 25th, 2015</h2>
                 </div>
             </div>
         </li>
@@ -167,9 +179,9 @@
             </div>
         </div>
     </div>
-</div>
+</article>
 
-<div id="event" class="content-section">
+<article id="event" class="content-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -314,9 +326,9 @@
             </div>
         </div>
     </div>
-</div>
+</article>
 
-<div id="support" class="content-section">
+<article id="support" class="content-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -326,22 +338,54 @@
         <div class="row">
             <div class="col-md-2 col-sm-6">
                 <div class="support-item">
-                    <span class="support-icon first"></span>
+                    <a href="https://trpcs.ejoinme.org/MyEvents/FramingtheFutureGala2014/CorporateSponsorshipOpportunities/tabid/499127/Default.aspx"
+                       target="_blank"><span class="support-icon first"></span></a>
 
                     <h3>Corporations</h3>
 
-                    <p>Corporate Sponsorships are available at various levels, from $500 to $10,000. Email <a
-                            href="mailto:framing@tworiverspcs.org">the gala committee</a> for more information.</p>
+                    <p>Corporate Sponsorships are available at various levels, from $500 to $10,000. Click <a
+                            href="https://trpcs.ejoinme.org/MyEvents/FramingtheFutureGala2014/CorporateSponsorshipOpportunities/tabid/499127/Default.aspx"
+                            target="_blank">here</a> to purchase a corporate sponsorship or email <a
+                            href="mailto:framing@tworiverspcs.org?subject=Corporate Sponsorship">the gala committee</a>
+                        for more information.</p>
                 </div>
             </div>
             <div class="col-md-2 col-sm-6">
                 <div class="support-item">
-                    <span class="support-icon second"></span>
+                    <a href="https://trpcs.ejoinme.org/MyEvents/FramingtheFutureGala2014/FamilySponsorshipOpportunities/tabid/499128/Default.aspx"
+                       target="_blank"><span class="support-icon second"></span></a>
 
                     <h3>Families</h3>
 
-                    <p>Family Sponsorships are also available at various levels, from $75 to $1,000. Email <a
-                            href="mailto:framing@tworiverspcs.org">the gala committee</a> for more information.</p>
+                    <p>Family Sponsorships are also available at various levels, from $75 to $1,000. Click <a
+                            href="https://trpcs.ejoinme.org/MyEvents/FramingtheFutureGala2014/FamilySponsorshipOpportunities/tabid/499128/Default.aspx"
+                            target="_blank">here</a> to purchase a family sponsorship or email <a
+                            href="mailto:framing@tworiverspcs.org?subject=Family Sponsorship">the gala committee</a> for
+                        more information.</p>
+
+                    <a href="#family-modal" data-toggle="modal">
+                        <button class="btn btn-primary" translate>Open modal dialog</button>
+                    </a>
+
+                    <div id="family-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                                    </button>
+                                    <h3 id="myModalLabel">Modal header</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p>One fine body…</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                    <button class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2 col-sm-6">
@@ -352,7 +396,8 @@
 
                     <p>The gala gladly accepts art donations to use in various auctions. The gala committee will
                         recognize all artists who donate. Email <a
-                                href="mailto:framing@tworiverspcs.org">the gala committee</a> for more information.</p>
+                                href="mailto:framing@tworiverspcs.org?subject=Artist Support">the gala committee</a> for
+                        more information.</p>
                 </div>
             </div>
             <div class="col-md-2 col-sm-6">
@@ -362,28 +407,30 @@
                     <h3>Tickets</h3>
 
                     <p>Tickets to attend the gala are $85 each and can be obtained online <a
-                            href="https://trpcs.ejoinme.org/MyEvents/FramingtheFutureGala2014/PurchaseTickets/tabid/499125/Default.aspx">here</a>.
+                            href="https://trpcs.ejoinme.org/MyEvents/FramingtheFutureGala2014/PurchaseTickets/tabid/499125/Default.aspx"
+                            target="_blank">here</a>.
                         Raffle tickets are also available and they can be purchased securely online <a
-                                href="https://trpcs.ejoinme.org/MyEvents/FramingtheFutureGala2014/PurchaseRaffleTickets/tabid/499129/Default.aspx">here</a>.
+                                href="https://trpcs.ejoinme.org/MyEvents/FramingtheFutureGala2014/PurchaseRaffleTickets/tabid/499129/Default.aspx"
+                                target="_blank">here</a>.
                     </p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <div class="support-item">
+                <aside class="support-item">
                     <h3>Our Sponsors</h3>
 
                     <p><a href="http://unionmarketdc.com/" target="_blank"><img
                             src="images/gala/sponsor/union_market_collage_small.jpg"
-                            alt="Union Market"></a><br />
-                    Union Market
+                            alt="Union Market"></a><br/>
+                        Union Market
                     </p>
-                </div>
+                </aside>
             </div>
         </div>
     </div>
-</div>
+</article>
 
-<div id="school" class="content-section">
+<article id="school" class="content-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -404,6 +451,7 @@
                     <div class="item-large-content">
                         <div class="item-header">
                             <h2 class="pull-left">Our Mission</h2>
+
                             <div class="clearfix"></div>
                         </div>
                         <p>
@@ -421,9 +469,9 @@
             </div>
         </div>
     </div>
-</div>
+</article>
 
-<div id="contact" class="content-section">
+<article id="contact" class="content-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -461,9 +509,9 @@
             </div>
         </div>
     </div>
-</div>
+</article>
 
-<div class="site-footer">
+<footer class="site-footer">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">
@@ -482,14 +530,17 @@
             </div>
         </div>
     </div>
-</div>
+</footer>
 
 
 <script src="js/vendor/jquery-1.10.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-<script src="js/jquery.easing-1.3.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/plugins.js"></script>
+<script>
+    $("h2.dynamic-date").html("April 24th, 2015")
+</script>
+<script src="js/vendor/jquery.easing-1.3.js"></script>
+<script src="js/vendor/bootstrap.js"></script>
+<script src="js/vendor/bxslider.js"></script>
 <script src="js/main.js"></script>
 <!--  Free HTML5 Template by http://www.templatemo.com -->
 <!-- templatemo 401 sprint -->

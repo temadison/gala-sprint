@@ -1,0 +1,10 @@
+/**
+ * Created by tmadison on 10/8/2014.
+ */
+{
+    color: 'red',
+    size: 'big',
+    enabled: true,
+    count: 5,
+    date_of_gala: "April 25th, 2015"
+}
