@@ -333,25 +333,12 @@ h6 {
     background-color: #2664B8;
 }
 
-#templatemo_logo {
-    background-color: #2664b8;
-    background-image: url(../images/templatemo_logo.png);
+#gala-framing-the-future-header {
+    background-color: transparent;
+    background-image: url(../images/gala/logo/rsz-combined-logo.png);
     background-repeat: no-repeat;
     background-position: center top;
     height: 77px;
-    display: block;
-}
-
-#templatemo_logo h1 {
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 77px;
-    display: block;
-}
-
-#templatemo_logo h1 a {
-    color: white;
     display: block;
 }
 
@@ -416,7 +403,7 @@ h6 {
 }
 
 /* ==========================================================================
-    Slider Styling
+    Site Slider Styling
    ========================================================================== */
 .site-slider {
     padding-top: 77px;
@@ -425,6 +412,23 @@ h6 {
 .site-slider ul li {
     float: left;
     margin: 0;
+}
+
+.slider-caption {
+    position: absolute;
+    z-index: 988;
+    bottom: 100px;
+    background-color: white;
+    display: inline-block;
+    right: 0;
+}
+
+.slider-caption h2 {
+    font-size: 20px;
+    margin: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
 }
 
 .bx-wrapper img {
@@ -445,23 +449,6 @@ h6 {
 
 .caption-wrapper {
     position: relative;
-}
-
-.slider-caption {
-    position: absolute;
-    z-index: 988;
-    bottom: 100px;
-    background-color: white;
-    display: inline-block;
-    right: 0;
-}
-
-.slider-caption h2 {
-    font-size: 20px;
-    margin: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: inline-block;
 }
 
 #bx-pager a {
@@ -512,6 +499,18 @@ h6 {
 }
 
 /* ==========================================================================
+    Event Item Slider Styling
+   ========================================================================== */
+.event-item-slider {
+    padding-top: 77px;
+}
+
+.event-item-slider ul li {
+    float: left;
+    margin: 0;
+}
+
+/* ==========================================================================
     Support Styling
    ========================================================================== */
 #support {
@@ -548,11 +547,11 @@ h6 {
 }
 
 .support-item .support-icon.third {
-    background-image: url(../images/service-third.png);
+    background-image: url(../images/service-fourth.png);
 }
 
 .support-item .support-icon.fourth {
-    background-image: url(../images/service-fourth.png);
+    background-image: url(../images/service-third.png);
 }
 
 .sponsor-primary {
@@ -683,6 +682,14 @@ h6 {
     color: #a3a7aa;
     text-decoration: line-through;
     font-weight: 600;
+}
+
+.event-table-old {
+    background-color: #62c4f9;
+}
+
+.event-table {
+    background-color: #cadef0;
 }
 
 /* ==========================================================================

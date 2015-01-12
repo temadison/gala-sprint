@@ -15,7 +15,19 @@
         });
     }
 
+    function eventItemSlider() {
+        $('.event-item-slider').bxSlider({
+            pagerCustom: '#bx-pager',
+            mode: 'fade',
+            nextText: '',
+            prevText: '',
+            auto: true
+        });
+    }
+
     mainSlider();
+
+    eventItemSlider();
 
 
     var $links = $(".bx-wrapper .bx-controls-direction a, #bx-pager a");
