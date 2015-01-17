@@ -49,7 +49,7 @@ textarea {
     resize: vertical;
 }
 
-.main-menu ul, .site-slider ul, ul.social {
+.main-menu ul, .site-section ul, ul.social {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -282,7 +282,7 @@ h6 {
     border-top: 1px solid #e1e6e9;
     margin-top: 60px;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -405,25 +405,31 @@ h6 {
 /* ==========================================================================
     Site Slider Styling
    ========================================================================== */
-.site-slider {
+.site-section {
     padding-top: 77px;
 }
 
-.site-slider ul li {
+.site-section ul li {
     float: left;
     margin: 0;
 }
 
-.slider-caption {
-    position: absolute;
-    z-index: 988;
-    bottom: 100px;
-    background-color: white;
-    display: inline-block;
-    right: 0;
+.caption-wrapper {
+    position: relative;
 }
 
-.slider-caption h2 {
+.site-slider-caption {
+    position: absolute;
+    z-index: 988;
+    bottom: 10px;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    display: inline-block;
+    right: 0px;
+}
+
+.site-slider-caption h2 {
     font-size: 20px;
     margin: 12px;
     font-weight: 600;
@@ -445,32 +451,6 @@ h6 {
     text-align: center;
     margin-top: -1px;
     position: relative;
-}
-
-.caption-wrapper {
-    position: relative;
-}
-
-#bx-pager a {
-    margin: 20px 10px 0 0;
-    padding: 0 0 40px 0;
-    display: inline-block;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    outline: 0;
-    border: 0;
-}
-
-#bx-pager a img {
-    outline: 0;
-    border: 0;
-}
-
-#bx-pager a.active {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    background: url(../images/active-state-blue.png) no-repeat;
-    background-position: center 85px;
 }
 
 .bx-controls {
@@ -498,16 +478,99 @@ h6 {
     color: white;
 }
 
+#site-bx-pager {
+}
+
+#site-bx-pager a {
+    margin: 20px 10px 0 0;
+    padding: 0 0 40px 0;
+    display: inline-block;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    outline: 0;
+    border: 0;
+}
+
+#site-bx-pager a img {
+    outline: 0;
+    border: 0;
+}
+
+#site-bx-pager a.active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background: url(../images/active-state-blue.png) no-repeat;
+    background-position: center 85px;
+}
+
 /* ==========================================================================
     Event Item Slider Styling
    ========================================================================== */
-.event-item-slider {
-    padding-top: 77px;
+.event-item-slider-1 {
+    margin: 0 0 0 -40px;
 }
 
-.event-item-slider ul li {
-    float: left;
-    margin: 0;
+.event-item-slider-1 ul li {
+    margin: 0 0 0 0;
+}
+
+.event-item-slider-2 {
+    margin: 0 0 0 -40px;
+}
+
+.event-item-slider-2 ul li {
+    margin: 0 0 0 0;
+}
+
+.event-item-slider-caption {
+    position: absolute;
+    z-index: 988;
+    bottom: 10px;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    display: inline-block;
+    right: 0px;
+}
+
+.event-item-slider-caption p {
+    font-size: 14px;
+    margin: 6px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.event-item-wrapper img {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.event-item-wrapper {
+    background-color: white;
+    margin: 0 0 0 0;
+}
+
+.event-item-bx-pager a {
+    display: inline-block;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    outline: 0;
+    border: 0;
+}
+
+.event-item-bx-pager a img {
+    outline: 0;
+    border: 0;
+}
+
+.event-item-bx-pager a.active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.event-table-img {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
 }
 
 /* ==========================================================================
@@ -690,6 +753,7 @@ h6 {
 
 .event-table {
     background-color: #cadef0;
+    margin: 0 10px 0 10px;
 }
 
 /* ==========================================================================
