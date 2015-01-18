@@ -338,6 +338,8 @@ h6 {
     background-image: url(../images/gala/logo/rsz-combined-logo.png);
     background-repeat: no-repeat;
     background-position: center top;
+    margin-left: -25px;
+    margin-right: -25px;
     height: 77px;
     display: block;
 }
@@ -355,7 +357,7 @@ h6 {
 
 .main-menu ul li {
     display: inline-block;
-    width: 120px;
+    width: 100px;
     text-align: center;
     line-height: 77px;
 }
@@ -568,11 +570,6 @@ h6 {
     filter: alpha(opacity=100);
 }
 
-.event-table-img {
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-}
-
 /* ==========================================================================
     Support Styling
    ========================================================================== */
@@ -620,6 +617,48 @@ h6 {
 .sponsor-primary {
     margin: 20px 0 0 0;
 }
+
+.sponsor-canvas {
+    color: blue;
+}
+
+.sponsor-paint-brush {
+    color: orange;
+}
+
+.sponsor-colored-pencil {
+    color: purple;
+}
+
+.sponsor-crayon {
+    color: green;
+}
+
+.sponsor-construction-paper {
+    color: red;
+}
+
+.sponsor-magic-marker {
+    color: blue;
+}
+
+.sponsor-scissors {
+    color: green;
+}
+
+.support-donation-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: left;
+    color: #404040;
+}
+
+.support-donation-list li {
+    list-style-type: disc;
+    color: #404040;
+}
+
 /* ==========================================================================
     Promotion Styling
    ========================================================================== */
@@ -752,8 +791,14 @@ h6 {
 }
 
 .event-table {
-    background-color: #cadef0;
+    background-color: #cadeec;
+    background-position: center;
     margin: 0 10px 0 10px;
+}
+
+.event-table-img {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
 }
 
 /* ==========================================================================

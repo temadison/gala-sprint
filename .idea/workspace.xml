@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d280ed0c-65f4-4cea-aeab-bbb84c8a3f10" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/templatemo_style.css" afterPath="$PROJECT_DIR$/css/templatemo_style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sprint.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,24 +27,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.509804" vertical-offset="3215" max-vertical-offset="8685">
-              <caret line="199" column="49" selection-start-line="199" selection-start-column="49" selection-end-line="199" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.9375" vertical-offset="3450" max-vertical-offset="9615">
+              <caret line="260" column="146" selection-start-line="260" selection-start-column="146" selection-end-line="260" selection-end-column="146" />
               <folding>
-                <marker date="1421525001000" expanded="true" signature="1466:1718" placeholder="..." />
-                <marker date="1421525001000" expanded="true" signature="1559:1587" placeholder="..." />
+                <marker date="1421602647000" expanded="true" signature="1466:1718" placeholder="..." />
+                <marker date="1421602647000" expanded="true" signature="1559:1587" placeholder="..." />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mcn-build-logo.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/gala/sponsor/mcn-build-logo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mcn-build-logo-large.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/gala/sponsor/mcn-build-logo-large.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.111111" vertical-offset="88812" max-vertical-offset="93765">
-              <caret line="5930" column="15" selection-start-line="5930" selection-start-column="15" selection-end-line="5932" selection-end-column="30" />
+            <state vertical-scroll-proportion="-6.2222223" vertical-offset="18237" max-vertical-offset="93765">
+              <caret line="1227" column="5" selection-start-line="1227" selection-start-column="5" selection-end-line="1227" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -65,10 +77,17 @@
       <file leaf-file-name="templatemo_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/templatemo_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4666667" vertical-offset="7599" max-vertical-offset="13740">
-              <caret line="520" column="20" selection-start-line="520" selection-start-column="20" selection-end-line="520" selection-end-column="20" />
+            <state vertical-scroll-proportion="-9.0" vertical-offset="9480" max-vertical-offset="14415">
+              <caret line="659" column="1" selection-start-line="659" selection-start-column="1" selection-end-line="659" selection-end-column="1" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noma-bid-logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/gala/sponsor/noma-bid-logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -94,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52380955" vertical-offset="246" max-vertical-offset="1365">
+            <state vertical-scroll-proportion="-9.777778" vertical-offset="246" max-vertical-offset="1365">
               <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
               <folding />
             </state>
@@ -119,9 +138,9 @@
       <list>
         <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/js/vendor/bxslider.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/templatemo_style.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -129,8 +148,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="162" />
-    <option name="y" value="64" />
+    <option name="x" value="158" />
+    <option name="y" value="67" />
     <option name="width" value="1536" />
     <option name="height" value="937" />
   </component>
@@ -277,6 +296,10 @@
               <option name="myItemId" value="gala" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sponsor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -293,10 +316,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pictures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,7 +472,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="162" y="64" width="1536" height="937" extended-state="0" />
+    <frame x="158" y="67" width="1536" height="937" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288835" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -501,28 +520,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/vendor/jquery.easing-1.3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3570">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="47838">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/service-first.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -753,14 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.111111" vertical-offset="88812" max-vertical-offset="93765">
-          <caret line="5930" column="15" selection-start-line="5930" selection-start-column="15" selection-end-line="5932" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/vendor/bxslider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="6.0" vertical-offset="432" max-vertical-offset="22830">
@@ -771,30 +760,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/templatemo_style.css">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4666667" vertical-offset="7599" max-vertical-offset="13740">
-          <caret line="520" column="20" selection-start-line="520" selection-start-column="20" selection-end-line="520" selection-end-column="20" />
+        <state vertical-scroll-proportion="-9.777778" vertical-offset="246" max-vertical-offset="1365">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2222223" vertical-offset="18237" max-vertical-offset="93765">
+          <caret line="1227" column="5" selection-start-line="1227" selection-start-column="5" selection-end-line="1227" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/gala/sponsor/mcn-build-logo-large.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/gala/sponsor/mcn-build-logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/templatemo_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.0" vertical-offset="9480" max-vertical-offset="14415">
+          <caret line="659" column="1" selection-start-line="659" selection-start-column="1" selection-end-line="659" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/gala/sponsor/noma-bid-logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.509804" vertical-offset="3215" max-vertical-offset="8685">
-          <caret line="199" column="49" selection-start-line="199" selection-start-column="49" selection-end-line="199" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.9375" vertical-offset="3450" max-vertical-offset="9615">
+          <caret line="260" column="146" selection-start-line="260" selection-start-column="146" selection-end-line="260" selection-end-column="146" />
           <folding>
-            <marker date="1421525001000" expanded="true" signature="1466:1718" placeholder="..." />
-            <marker date="1421525001000" expanded="true" signature="1559:1587" placeholder="..." />
+            <marker date="1421602647000" expanded="true" signature="1466:1718" placeholder="..." />
+            <marker date="1421602647000" expanded="true" signature="1559:1587" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52380955" vertical-offset="246" max-vertical-offset="1365">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
