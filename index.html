@@ -36,6 +36,106 @@
             dialog.close();
         };
     </script>
+
+    <style type="text/css">
+
+        #marqueecontainer {
+            position: relative;
+            margin-left: 50px;
+            width: 200px; /*marquee width */
+            height: 150px; /*marquee height */
+            background-color: white;
+            overflow: hidden;
+            border: 3px solid orange;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+        #marquee_container {
+            position: relative;
+            margin-left: 50px;
+            width: 200px; /*marquee width */
+            height: 150px; /*marquee height */
+            background-color: white;
+            overflow: hidden;
+            border: 3px solid orange;
+            padding: 2px;
+            padding-left: 4px;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+
+        /***********************************************
+         * Cross browser Marquee II- © Dynamic Drive (www.dynamicdrive.com)
+         * This notice MUST stay intact for legal use
+         * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+         ***********************************************/
+
+        var delayb4scroll = 250 //Specify initial delay before marquee starts to scroll on page (2000=2 seconds)
+        var marqueespeed = 2 //Specify marquee scroll speed (larger is faster 1-10)
+        var pauseit = 1 //Pause marquee onMousever (0=no. 1=yes)?
+
+        ////NO NEED TO EDIT BELOW THIS LINE////////////
+
+        var copyspeed = marqueespeed
+        var pausespeed = (pauseit == 0) ? copyspeed : 0
+        var actualheight = ''
+
+        function scrollmarquee() {
+            if (parseInt(crossmarquee.style.top) > (actualheight * (-1) + 8))
+                crossmarquee.style.top = parseInt(crossmarquee.style.top) - copyspeed + "px"
+            else
+                crossmarquee.style.top = parseInt(marqueeheight) + 8 + "px"
+        }
+
+        function scroll_marquee() {
+            if (parseInt(cross_marquee.style.top) > (actualheight * (-1) + 8))
+                cross_marquee.style.top = parseInt(cross_marquee.style.top) - copyspeed + "px"
+            else
+                cross_marquee.style.top = parseInt(marqueeheight) + 8 + "px"
+        }
+
+        function initializemarquee() {
+            crossmarquee = document.getElementById("vmarquee")
+            crossmarquee.style.top = 0
+            marqueeheight = document.getElementById("marqueecontainer").offsetHeight
+            actualheight = crossmarquee.offsetHeight
+            if (window.opera || navigator.userAgent.indexOf("Netscape/7") != -1) { //if Opera or Netscape 7x, add scrollbars to scroll and exit
+                crossmarquee.style.height = marqueeheight + "px"
+                crossmarquee.style.overflow = "scroll"
+                return
+            }
+            setTimeout('lefttime=setInterval("scrollmarquee()",30)', delayb4scroll)
+        }
+
+        function initialize_marquee() {
+            cross_marquee = document.getElementById("v_marquee")
+            cross_marquee.style.top = 0
+            marqueeheight = document.getElementById("marquee_container").offsetHeight
+            actualheight = cross_marquee.offsetHeight
+            if (window.opera || navigator.userAgent.indexOf("Netscape/7") != -1) { //if Opera or Netscape 7x, add scrollbars to scroll and exit
+                cross_marquee.style.height = marqueeheight + "px"
+                cross_marquee.style.overflow = "scroll"
+                return
+            }
+            setTimeout('lefttime=setInterval("scroll_marquee()",30)', delayb4scroll)
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener("load", initializemarquee, false)
+            window.addEventListener("load", initialize_marquee, false)
+        } else if (window.attachEvent) {
+            window.attachEvent("onload", initializemarquee)
+            window.attachEvent("onload", initialize_marquee)
+        } else if (document.getElementById) {
+            window.onload = initializemarquee
+            window.onload = initialize_marquee
+        }
+
+
+    </script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -158,12 +258,12 @@
 <article id="join" class="content-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                 <h1 class="section-title">Join Us</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-offset-1 col-md-10 text-center">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                 <h2>Framing the Future Gala • Saturday, April 25, 2015</h2>
 
                 <h4>VIP event begins at 5:30; Doors open to all ticketed guests at 6:30<br/>Dock5 at Union Market • 1309
@@ -177,7 +277,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                 <h3>
                     <a href="https://trpcs.ejoinme.org/MyEvents/FramingtheFuture2015/PurchaseTickets/tabid/579054/Default.aspx"
                        target="_blank">Purchase Tickets</a></h3>
@@ -258,8 +358,9 @@
         </div>
         <div class="row">
             <div class="col-md-9 col-sm-8 col-xs-8">
-                <h3 class="text-center"><a href="https://trpcs.ejoinme.org/MyEvents/FramingtheFuture2015/PurchaseTickets/tabid/579054/Default.aspx"
-                       target="_blank">Purchase Tickets</a></h3><br />
+                <h3 class="text-center"><a
+                        href="https://trpcs.ejoinme.org/MyEvents/FramingtheFuture2015/PurchaseTickets/tabid/579054/Default.aspx"
+                        target="_blank">Purchase Tickets</a></h3><br/>
 
                 <h4><b>Silent Auction:</b> An exciting selection of art, goods and services will be available for
                     silent auction during the event. Items include paintings, drawings, sculpture and jewelry from
@@ -283,17 +384,21 @@
                 <div class="event-item-bx-pager">
                     <ul class="event-item-slider-1">
                         <li>
-                            <img src="images/gala/pictures/rsz_eye_8846.jpg" alt="slider image 1">
+                            <a href="https://debramiriamblake.wordpress.com/" target="_blank">
+                                <img src="images/gala/event/art/debra-blake.png" alt="debra blake painting">
+                            </a>
 
                             <div class="event-item-slider-caption">
-                                <p>Image 8846</p>
+                                <p>Debra Blake</p>
                             </div>
                         </li>
                         <li>
-                            <img src="images/gala/pictures/rsz_eye_8852.jpg" alt="slider image 1">
+                            <a href="http://www.zgallerie.com/p-11260-henri-matisse-nu-bleu-4.aspx" target="_blank">
+                                <img src="images/gala/event/art/henri-matisse-nu-bleu-print.jpg" alt="henri matisse print">
+                            </a>
 
                             <div class="event-item-slider-caption">
-                                <p>Image 8852</p>
+                                <p>Henri Matisse Print</p>
                             </div>
                         </li>
                         <li>
@@ -317,32 +422,34 @@
                 <div class="event-item-bx-pager">
                     <ul class="event-item-slider-2">
                         <li>
-                            <img src="images/gala/pictures/rsz_eye_8911.jpg" alt="slider image 1">
-
-                            <div class="event-item-slider-caption">
-                                <p>Image 8902</p>
-                            </div>
+                            <a href="http://acquaal2dc.com/" target="_blank">
+                                <img src="images/gala/event/aqua-al-2.png" alt="slider image 1">
+                            </a>
                         </li>
                         <li>
-                            <img src="images/gala/pictures/rsz_eye_9037.jpg" alt="slider image 1">
-
-                            <div class="event-item-slider-caption">
-                                <p>Image 8911</p>
-                            </div>
+                            <a href="http://boundaryrd.com/" target="_blank">
+                                <img src="images/gala/event/restaurant/boundary-road-done.png" alt="slider image 1">
+                            </a>
                         </li>
                         <li>
-                            <img src="images/gala/pictures/rsz_eye_9155.jpg" alt="slider image 1">
-
-                            <div class="event-item-slider-caption">
-                                <p>Image 8922</p>
-                            </div>
+                            <a href="http://www.dangerouspiesdc.com/" target="_blank">
+                                <img src="images/gala/event/dangerously-delicious.jpg" alt="slider image 1">
+                            </a>
                         </li>
                         <li>
-                            <img src="images/gala/pictures/rsz_eye_9295.jpg" alt="slider image 1">
-
-                            <div class="event-item-slider-caption">
-                                <p>Image 8957</p>
-                            </div>
+                            <a href="http://www.michosgrill.com/" target="_blank">
+                                <img src="images/gala/event/michos.jpg" alt="slider image 1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.poboyjimdc.com/" target="_blank">
+                                <img src="images/gala/event/po-boy-jim.jpg" alt="slider image 1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.charmcitymeadworks.com/" target="_blank">
+                                <img src="images/gala/event/restaurant/charm-city-meadworks.png" alt="slider image 1">
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -365,30 +472,39 @@
         <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-6 text-center">
                 <div class="row">
-                    <p>Corporate Sponsorships are available at various levels, from $500 to $10,000.<br/>Click <a
+                    <h4>Corporate Sponsorships are available at various levels, from $500 to $10,000.<br/>Click <a
                             href="https://trpcs.ejoinme.org/?tabid=579168"
                             target="_blank">here</a> to purchase a corporate sponsorship or email <a
                             href="mailto:framing@tworiverspcs.org?subject=Corporate Sponsorship">the gala committee</a>
-                        for more information.</p>
+                        for more information.</h4>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-6 text-center">
-                        <h4 class="sponsor-canvas">Canvas ($5000)</h4><a href="http://www.mcnbuild.com/"
-                                                                         target="_blank"><img
-                            src="images/gala/sponsor/mcn-build-logo-canvas.jpg"
-                            alt="MCN Build"></a>
-                        <h4 class="sponsor-colored-pencil">Colored Pencil ($1000)</h4>
+                        <h4 class="support-canvas">Canvas ($5000)</h4>
+                            <a href="http://www.mcnbuild.com/" target="_blank"><img
+                                src="images/gala/sponsor/mcn-build-logo-canvas.jpg"
+                                alt="MCN Build"></a>
+                            <a href="http://pmmcompanies.com/" target="_blank"><img
+                                src="images/gala/sponsor/pmm-companies-canvas.jpg"
+                                alt="PMM Companies"></a>
+                        <h4 class="support-colored-pencil">Colored Pencil ($1000)</h4>
 
                         <p>Your logo here</p>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-6 text-center">
-                        <h4 class="sponsor-paint-brush">Paint Brush ($2000)</h4>
+                        <h4 class="support-paint-brush">Paint Brush ($2000)</h4>
 
                         <p>Your logo here</p>
-                        <h4 class="sponsor-crayon">Crayon ($500)</h4><a href="http://www.nomabid.org/"
-                                                                        target="_blank"><img
-                            src="images/gala/sponsor/noma-bid-logo-crayon.png"
-                            alt="NOMA BID"></a>
+                        <h4 class="support-crayon">Crayon ($500)</h4>
+                        <a href="http://www.nomabid.org/" target="_blank"><img
+                                src="images/gala/sponsor/noma-bid-logo-crayon.png"
+                                alt="NOMA BID"></a>
+                        <a href="http://realestateindc.com" target="_blank"><img
+                                src="images/gala/sponsor/tom-faison-sponsor.png"
+                                alt="Tom Faison Real Estate in DC"></a>
+                        <a href="http://pview.findlaw.com/view/4448997_1" target="_blank"><img
+                                src="images/gala/sponsor/lauren_e_baum_law_office-sponsor.png"
+                                alt="Lauren E Baum Law Office"></a>
                     </div>
                 </div>
             </div>
@@ -396,7 +512,7 @@
                 <aside class="support-item">
                     <h3>Presenting Sponsor</h3>
 
-                    <p class="sponsor-primary"><a href="http://unionmarketdc.com/" target="_blank"><img
+                    <p class="support-primary"><a href="http://unionmarketdc.com/" target="_blank"><img
                             src="images/gala/sponsor/union-market-collage-small.jpg"
                             alt="Union Market"></a><br/>
                         Union Market
@@ -404,7 +520,7 @@
 
                     <h3>VIP Sponsor</h3>
 
-                    <p class="sponsor-primary"><a href="http://www.buildinghope.org/" target="_blank"><img
+                    <p class="support-primary"><a href="http://www.buildinghope.org/" target="_blank"><img
                             src="images/gala/sponsor/building-hope-logo.gif"
                             alt="Building Hope"></a><br/>
                     </p>
@@ -421,14 +537,14 @@
             <div class="col-md-8 col-sm-6 col-xs-6 text-center">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <p>Family Sponsorships are also available at various levels, from $300 to $1,000.<br/>Click <a
+                        <h4>Family Sponsorships are also available at various levels, from $300 to $1,000.<br/>Click <a
                                 href="https://trpcs.ejoinme.org/?tabid=579168"
                                 target="_blank">here</a> to purchase a family sponsorship or email <a
                                 href="mailto:framing@tworiverspcs.org?subject=Family Sponsorship">the gala committee</a>
-                            for more information.</p>
-                        <h4 class="sponsor-construction-paper">Construction Paper ($1000)</h4>
-                        <h4 class="sponsor-magic-marker">Magic Marker ($750)</h4>
-                        <h4 class="sponsor-scissors">Scissors ($300)</h4>
+                            for more information.</h4>
+                        <h4 class="support-construction-paper">Construction Paper ($1000)</h4>
+                        <h4 class="support-magic-marker">Magic Marker ($750)</h4>
+                        <h4 class="support-scissors">Scissors ($300)</h4>
                     </div>
                 </div>
             </div>
@@ -436,12 +552,16 @@
                 <aside class="support-item">
                     <h3>Family Sponsors</h3>
 
-                    <p class="sponsor-primary">
-                        Your Family Here<br/>
-                        Your Family Here<br/>
-                        Your Family Here<br/>
-                        Your Family Here<br/>
-                    </p>
+                    <div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+                        <div id="vmarquee" style="position: relative; width: 98%;">
+                            <p class="support-crayon-item">Sarah & Todd Richardson</p>
+                            Your Family Here<br/>
+                            Your Family Here<br/>
+                            Your Family Here<br/>
+                            Your Family Here<br/>
+                            Your Family Here<br/>
+                        </div>
+                    </div>
                 </aside>
             </div>
         </div>
@@ -455,9 +575,9 @@
             <div class="col-md-8 col-sm-6 col-xs-6 text-center">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <p>The Gala is also welcoming in-kind donations. Specifically, we are looking for the following
+                        <h4>The Gala is also welcoming in-kind donations. Specifically, we are looking for the following
                             types of items in support of the Gala:<br/>
-                        </p>
+                        </h4>
                         <ul class="support-donation-list">
                             <li>Professional Art (any medium)</li>
                             <li>Jewelry</li>
@@ -479,10 +599,39 @@
                 <aside class="support-item">
                     <h3>In-kind Donators</h3>
 
-                    <p class="sponsor-primary">
-                        Donator 1<br/>
-                        Donator 2<br/>
-                        Donator 3<br/>
+                    <div id="marquee_container" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+                        <div id="v_marquee" style="position: relative; width: 98%;">
+                            <img src="images/gala/support/disney-park-hopper-support.png"/><br/>
+                            <img src="images/gala/support/liberty-mountain-support.jpg"/><br/>
+                            <img src="images/gala/support/two-feathers-support.png"/><br/>
+                            <img src="images/gala/support/amc-theatres-support.jpg"/><br/>
+                            Lisa Schifferle<br/>
+                            Eric Smith & Kathryn Petrillo<br/>
+                            <img src="images/gala/support/clydes-at-mark-center-support.jpg"/><br/>
+                            <img src="images/gala/support/music-on-the-hill-support.png"/><br/>
+                            <img src="images/gala/support/mosquito-squad-support.png"/><br/>
+                            <img src="images/gala/support/bikram-yoga-support.png"/><br/>
+                            <img src="images/gala/support/belga-cafe-support.jpg"/><br/>
+                            <img src="images/gala/support/biker-barre-support.jpg"/><br/>
+                            <img src="images/gala/support/daily-rider-support.jpg"/><br/>
+                            <img src="images/gala/support/hills-kitchen-support.jpg"/><br/>
+                            <img src="images/gala/support/metro-mutts-support.jpg"/><br/>
+                            <img src="images/gala/support/port-city-brewing-company-support.jpg"/><br/>
+                            <img src="images/gala/support/results-the-gym-support.jpg"/><br/>
+                            <img src="images/gala/support/seventh-hill-support.jpg"/><br/>
+                            <img src="images/gala/support/solidcore-support.png"/><br/>
+                            <img src="images/gala/support/todd-grays-watershed-support.jpg"/><br/>
+                            <img src="images/gala/support/toki-support.jpg"/><br/>
+                            <img src="images/gala/support/atlas-vet-support.jpg"/><br/>
+                            <img src="images/gala/support/cava-mezze-support.jpg"/><br/>
+                            <img src="images/gala/support/dc-united-support.jpg"/><br/>
+                            <img src="images/gala/support/ridici-support.jpg"/><br/>
+                            <img src="images/gala/support/spot-on-training-support.jpg"/><br/>
+                            <img src="images/gala/support/washington-chorus-support.png"/><br/>
+                            <img src="images/gala/support/washington-mystics-support.jpg"/><br/>
+                            <img src="images/gala/support/ymca-support.jpg"/><br/>
+                        </div>
+                    </div>
                     </p>
                 </aside>
             </div>
@@ -565,30 +714,6 @@
                     <fieldset class="col-md-12 col-sm-12 col-xs-12">
                         <input type="submit" name="send" value="Send Message" id="submit" class="button">
                     </fieldset>
-                </div>
-            </div>
-        </div>
-
-        <a href="#family-modal" data-toggle="modal">
-            <button class="btn btn-primary" translate>Open modal dialog</button>
-        </a>
-
-        <div id="family-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-             aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
-                        </button>
-                        <h3 id="myModalLabel">Modal header</h3>
-                    </div>
-                    <div class="modal-body">
-                        <p>One fine body…</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                        <button class="btn btn-primary">Save changes</button>
-                    </div>
                 </div>
             </div>
         </div>

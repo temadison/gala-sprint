@@ -543,8 +543,8 @@ h6 {
 }
 
 .event-item-wrapper img {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .event-item-wrapper {
@@ -554,8 +554,8 @@ h6 {
 
 .event-item-bx-pager a {
     display: inline-block;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+    opacity: 1;
+    filter: alpha(opacity=100);
     outline: 0;
     border: 0;
 }
@@ -614,35 +614,41 @@ h6 {
     background-image: url(../images/service-third.png);
 }
 
-.sponsor-primary {
+.support-primary {
     margin: 20px 0 0 0;
+    text-align: center;
 }
 
-.sponsor-canvas {
+.support-canvas {
     color: blue;
 }
 
-.sponsor-paint-brush {
+.support-paint-brush {
     color: orange;
 }
 
-.sponsor-colored-pencil {
+.support-colored-pencil {
     color: purple;
 }
 
-.sponsor-crayon {
+.support-crayon {
     color: green;
 }
 
-.sponsor-construction-paper {
+.support-crayon-item {
+    color: green;
+    margin: 0px;
+}
+
+.support-construction-paper {
     color: red;
 }
 
-.sponsor-magic-marker {
+.support-magic-marker {
     color: blue;
 }
 
-.sponsor-scissors {
+.support-scissors {
     color: green;
 }
 
